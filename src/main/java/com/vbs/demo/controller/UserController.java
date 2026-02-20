@@ -106,7 +106,6 @@ public class UserController {
             t.setDescription("Rs "+user.getBalance()+" Deposit Successful");
             t.setUserId(user2.getId());
             transactionRepo.save(t);
-            return "Deposit Successful";
         }
         historyRepo.save(h1);
 
